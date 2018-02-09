@@ -1,0 +1,17 @@
+NOTE: You have to link your js file in order for the call to work, unlike node and express and all the backend, since this is a client request
+
+XMLHttpRequest = Web browsers have a built in tool which establishes a connection with the url that we specify, and then we send or receive data.
+  NOTE: This is a Javascript Object.
+  EXAMPLE:
+    myRequest = new XMLHttpRequest();
+
+.open: This is how you tell ajax, you're making a new request. The first parameter specifies what kind of request it is. The second parameters is the path where to receive or post this information to.
+  EXAMPLE:
+    myRequest.open('GET', )
+
+.each(): This is jQuery's version of a loop, typically through objects.
+
+GET REQUEST: This is how you receive data from the web.
+POST REQUEST: This is how you send data to somewhere.
+
+LOADING A .JSON FILE USING JQUERY: $.getJSON()
