@@ -7,7 +7,19 @@ XMLHttpRequest = Web browsers have a built in tool which establishes a connectio
 
 .open: This is how you tell ajax, you're making a new request. The first parameter specifies what kind of request it is. The second parameters is the path where to receive or post this information to.
   EXAMPLE:
-    myRequest.open('GET', )
+    myRequest.open('GET', urlName);
+
+.onload: This is where we say what should happen once the data is loaded.
+  EXAMPLE:
+    myRequest.onload = function(){
+      This is where you tell it what code to ejecute.
+      NOTE: You can also achieve this same result by using a callback function.
+    }
+
+.responseText: This is how we retrieve data value such as json or other datatypes. This method handles all formats that are not based on XML. It returns an exact representation of the response as a string. Plain, (X)HTML, and JSON.
+  Otherwise you can use .responsXML();
+
+.send(): This method is how you actually send the request.
 
 .each(): This is jQuery's version of a loop, typically through objects.
 
